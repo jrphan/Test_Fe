@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from "styled-components";
+import Header from "./components/Header";
+import Slider from "./components/Slider";
+import Tutorial from "./components/Tutorial";
+import LongBanner01 from "./components/LongBanner01";
+import Info from "./components/Info";
+import Infovideo from "./components/Infovideo";
+import Projects from "./components/Projects";
+import LongBanner02 from "./components/LongBanner02";
+import Procedure from "./components/Procedure";
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AppStyled>
+      <Header/>
+      <Slider/>
+      <Tutorial/>
+      <LongBanner01/>
+      <Info/>
+      <Infovideo/>
+      <Projects/>
+      <LongBanner02/>
+      <Procedure/>
+      <Footer/>
+    </AppStyled>
   );
 }
+
+const AppStyled = styled.div `
+    width: 100vw;
+    height: 100%;
+
+`;
 
 export default App;
