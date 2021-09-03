@@ -63,17 +63,9 @@ const HeaderStyled = styled.header `
             &__text {
                 color: var(--white-color);
                 font-size: 15px;
-
-                @media screen and (max-width: 768px) {
-                    display: none;
-	            }
             }
 
             &__btn {
-                @media screen and (max-width: 768px) {
-                    display: none;
-	            }
-
                 a {
                     &:last-child {
                         background-color: var(--primary-color);
@@ -88,6 +80,10 @@ const HeaderStyled = styled.header `
                     border: 1px solid var(--white-color);
                     border-radius: 5px;
                     transition: all 0.5s ease;
+
+                    @media screen and (max-width: 768px) {
+                        padding: 4px 8px;
+	                }
     
                     &:hover {
                         background-color: var(--primary-color);
