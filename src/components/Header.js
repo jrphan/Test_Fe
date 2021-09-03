@@ -46,6 +46,7 @@ const HeaderStyled = styled.header `
 
     @media screen and (max-width: 768px) {
         height: 600px;
+        background-position: 40% center;
 	}
 
     background-image: url('/img/Mainbanner.jpg');
